@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Илья Черепков](https://up.htmlacademy.ru/htmlcss/30/user/1598313).
-* Наставник: `Неизвестно`.
+* Наставник: [Магомед Кандаев](https://htmlacademy.ru/profile/magomedkandaev).
 
 ---
 
