@@ -19,6 +19,7 @@
 /*Variables*/
 
 :root {
+  --special-black: rgba(0, 0, 0, 0.3) ;
   --basic-black: #000000;
   --basic-extra-dark: #333333;
   --basic-grey: #EEEEEE;
@@ -90,10 +91,10 @@ img {
   color: var(--basic-blue);
 }
 
-/*.site-navigation-link:active {
-  color: var(--)
+.site-navigation-link:active {
+  color: var(--special-black);
 }
-*/
+
 
 /* Description */
 
