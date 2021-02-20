@@ -87,6 +87,10 @@ img {
   color: var(--basic-black);
 }
 
+.site-navigation-selected-link{
+  color: var(--basic-brown);
+}
+
 .site-navigation-link:hover,
 .site-navigation-link:focus {
   color: var(--basic-blue);
