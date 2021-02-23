@@ -46,7 +46,7 @@
 /* Global */
 
 body {
-  min-width: 1200px;
+  min-width: 1280px;
   margin: 0;
   padding: 0;
   font-family: "PT Sans", "Arial", sans-serif;
@@ -58,6 +58,11 @@ body {
   background-color: var(--basic-white);
   background-position: top center;
   background-repeat: no-repeat;
+
+  min-height: 100%;
+  display: grid;
+  grid-template-rows: min-content 1fr min-content;
+  align-content: start;
 }
 
 a {
@@ -69,9 +74,32 @@ img {
   height: auto;
 }
 
+/* Grid */
+
+.page {
+  height: 100%;
+}
+
 /* Navigation */
 
+.main-header {
+  margin-bottom: 62px;
+  background-color: var(--basic-white);
+  display: grid;
+  grid-template-columns: 1fr min-content;
+  width: 1200px;
+  margin: 0 auto;
+  padding: 0 10px;
+
+}
+
+.main-header-logo {
+
+  justify-self: center;
+}
+
 .main-navigation {
+  display: grid;
   font-size: 14px;
   line-height: 26px;
   font-weight: bold;
@@ -81,6 +109,8 @@ img {
 
 .site-navigation {
   list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 .site-navigation-link {
@@ -100,6 +130,14 @@ img {
   color: var(--special-black);
 }
 
+/* Container */
+
+.container {
+  width: 1200px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
 
 /* Description */
 
@@ -115,6 +153,8 @@ img {
 
 .description-list {
   list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 .description-item {
@@ -127,9 +167,20 @@ img {
   color: var(--basic-black);
 }
 
+.special-description-bar-1 {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+}
+
+.special-description-bar-2 {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+}
+
 .special-description {
   color: var(--basic-white);
   background-color: var(--basic-blue);
+  padding: 50px 50px;
 }
 
 .special-description h3 {
@@ -142,10 +193,14 @@ img {
 
 .special-item {
   background-color: var(--basic-grey);
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
 }
 
 .recommendation-list {
   list-style: none;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
 }
 
 .recommendation-item {
@@ -342,10 +397,22 @@ img {
 
 /* Footer */
 
+.main-footer {
+  padding: 30px 0;
+}
+
+.main-footer .container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
 .footer-contacts {
   font-size: 21px;
   line-height: 26px;
   font-weight: bold;
+  margin: 0;
+  width: 440px;
+  justify-self: center;
 }
 
 .footer-contacts-phone {
@@ -355,8 +422,16 @@ img {
 
 .footer-social {
   text-align: center;
+  width: 400px;
+  justify-self: center;
 }
 
 .footer-social-list {
   list-style: none;
+}
+
+.footer-copyright {
+  max-width: 400px;
+  margin: 0;
+  justify-self: end;
 }
