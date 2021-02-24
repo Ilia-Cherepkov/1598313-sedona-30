@@ -31,42 +31,48 @@
   <section class="filters">
     <h2>Фильтр</h2>
     <form method="get" action="https://echo.htmlacademy.ru">
-      <fieldset>
-        <legend>Инфраструктура:</legend>
-        <ul class="filter-list">
-          <li class="filter-option filter-checkbox">
-            <input class="filter-input-checkbox filter-input" type="checkbox" name="pool" id="filter-pool" checked>
-            <label for="filter-pool">Бассейн</label>
-          </li>
-          <li class="filter-option filter-checkbox">
-            <input class="filter-input-checkbox filter-input" type="checkbox" name="parking" id="filter-parking">
-            <label for="filter-parking">Парковка</label>
-          </li>
-          <li class="filter-option filter-checkbox">
-            <input class="filter-input-checkbox filter-input"  type="checkbox" name="wi-fi" id="filter-wi-fi">
-            <label for="filter-wi-fi">Wi-fi</label>
-        </ul>
-      </fieldset>
-      <fieldset>
-        <legend>Тип жилья:</legend>
-        <ul class="filter-list">
-          <li class="filter-option filter-radio">
-            <input class="filter-input-radio filter-input" type="checkbox" name="hotel" id="filter-hotel" checked>
-            <label for="filter-hotel">Гостиница</label>
-          </li>
-          <li class="filter-option filter-radio">
-            <input class="filter-input-radio filter-input" type="checkbox" name="motel" id="filter-motel" checked>
-            <label for="filter-motel">Мотель</label>
-          </li>
-          <li class="filter-option filter-radio">
-            <input class="filter-input-radio filter-input" type="checkbox" name="apartments" id="filter-apartments" checked>
-            <label for="filter-apartments">Апартаменты</label>
-        </ul>
-      </fieldset>
-      <div class="filter-range-area">
-        <p class="filter-range-area-name">Стоимость в сутки (р):</p>
-        <input class="filter-range" type="range" min="0" max="3000">
-        <button class="filter-button" type="submit">Показать</button>
+      <div class="filter-bar">
+        <fieldset>
+          <div class="filter-block-1">
+            <legend>Инфраструктура:</legend>
+            <ul class="filter-list">
+              <li class="filter-option filter-checkbox">
+                <input class="filter-input-checkbox filter-input" type="checkbox" name="pool" id="filter-pool" checked>
+                <label for="filter-pool">Бассейн</label>
+              </li>
+              <li class="filter-option filter-checkbox">
+                <input class="filter-input-checkbox filter-input" type="checkbox" name="parking" id="filter-parking">
+                <label for="filter-parking">Парковка</label>
+              </li>
+              <li class="filter-option filter-checkbox">
+                <input class="filter-input-checkbox filter-input"  type="checkbox" name="wi-fi" id="filter-wi-fi">
+                <label for="filter-wi-fi">Wi-fi</label>
+            </ul>
+          </div>
+        </fieldset>
+        <fieldset>
+          <div class="filter-block-2">
+            <legend>Тип жилья:</legend>
+            <ul class="filter-list">
+              <li class="filter-option filter-radio">
+                <input class="filter-input-radio filter-input" type="checkbox" name="hotel" id="filter-hotel" checked>
+                <label for="filter-hotel">Гостиница</label>
+              </li>
+              <li class="filter-option filter-radio">
+                <input class="filter-input-radio filter-input" type="checkbox" name="motel" id="filter-motel" checked>
+                <label for="filter-motel">Мотель</label>
+              </li>
+              <li class="filter-option filter-radio">
+                <input class="filter-input-radio filter-input" type="checkbox" name="apartments" id="filter-apartments" checked>
+                <label for="filter-apartments">Апартаменты</label>
+            </ul>
+           </div>
+        </fieldset>
+        <div class="filter-range-area">
+          <p class="filter-range-area-name">Стоимость в сутки (р):</p>
+          <input class="filter-range" type="range" min="0" max="3000">
+          <button class="filter-button" type="submit">Показать</button>
+        </div>
       </div>
     </form>
   </section>
@@ -164,26 +170,28 @@
   </section>
 </main>
 <footer class="main-footer">
-  <section class="footer-contacts">
-    <h2>Контакты</h2>
-    <p>#visitsedona<br>
-      <a class="footer-contacts-phone" href="tel:+74956660166">тел: +7(495) 666-01-66</a>
+  <div class="container">
+    <section class="footer-contacts">
+      <h2>Контакты</h2>
+      <p>#visitsedona<br>
+        <a class="footer-contacts-phone" href="tel:+74956660166">тел: +7(495) 666-01-66</a>
+      </p>
+    </section>
+    <section class="footer-social">
+      <h2>Мы в социальных сетях</h2>
+      <ul class="footer-social-list">
+        <li><a class="social-button" href="">Twitter</a></li>
+        <li><a class="social-button" href="">Facebook</a></li>
+        <li><a class="social-button" href="">Youtube</a></li>
+      </ul>
+    </section>
+    <p class="footer-copyright">
+      website by:
+      <a class="copyright-link" href="https://htmlacademy.ru">
+        <img src="img/logo-htmlacademy.svg" width="115" height="41" alt="Логотип HTML Academy">
+      </a>
     </p>
-  </section>
-  <section class="footer-social">
-    <h2>Мы в социальных сетях</h2>
-    <ul class="footer-social-list">
-      <li><a class="social-button" href="">Twitter</a></li>
-      <li><a class="social-button" href="">Facebook</a></li>
-      <li><a class="social-button" href="">Youtube</a></li>
-    </ul>
-  </section>
-  <p class="footer-copyright">
-    website by:
-    <a class="copyright-link" href="https://htmlacademy.ru">
-      <img src="img/logo-htmlacademy.svg" width="115" height="41" alt="Логотип HTML Academy">
-    </a>
-  </p>
+  </div>
 </footer>
 </body>
 </html>
