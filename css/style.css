@@ -335,12 +335,7 @@ img {
 
 .hotel-item {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-}
-
-.hotel-card {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns:1fr 1fr 2fr;
 }
 
 .hotel-link {
