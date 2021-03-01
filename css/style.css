@@ -168,19 +168,17 @@ img {
 }
 
 .special-description-bar-1 {
-  display: grid;
-  grid-template-columns: 1fr 2fr;
+  display: flex;
 }
 
 .special-description-bar-2 {
-  display: grid;
-  grid-template-columns: 1fr 2fr;
+  display: flex;
 }
 
 .special-description {
   color: var(--basic-white);
   background-color: var(--basic-blue);
-  padding: 50px 50px;
+  padding: 40px 50px;
 }
 
 .special-description h3 {
