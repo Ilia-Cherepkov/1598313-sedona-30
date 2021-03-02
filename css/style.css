@@ -99,7 +99,8 @@ img {
 }
 
 .main-navigation {
-  display: grid;
+  /*display: flex;
+  flex-wrap: wrap;*/
   font-size: 14px;
   line-height: 26px;
   font-weight: bold;
@@ -108,6 +109,9 @@ img {
 }
 
 .site-navigation {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
   list-style: none;
   margin: 0;
   padding: 0;
@@ -189,8 +193,10 @@ img {
   background-color: var(--basic-blue);
 }
 
-.special-item {
+.special-list {
+  list-style: none;
   background-color: var(--basic-grey);
+
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
 }
