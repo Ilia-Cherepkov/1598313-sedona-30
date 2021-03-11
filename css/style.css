@@ -106,10 +106,6 @@ img {
   margin: 0 auto;
   padding: 0 0;
   position: relative;
-  box-shadow:
-    -2px -2px 5px -3px #34495e,
-    2px -2px 5px -3px #34495e;
-
 }
 
 .main-header-logo {
@@ -187,7 +183,6 @@ img {
   width: 1200px;
   margin: 0 auto;
   padding: 0 0;
-  /*box-shadow: 0 10px 10px -3px #34495e;*/
 }
 
 .block-for-welcome {
