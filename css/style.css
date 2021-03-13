@@ -43,6 +43,8 @@
   --basic-murky-blue: #81B3D3;
   --basic-dark-blue: #669EC0;
   --basic-deep-blue: #5496BD;
+  --booking-shadow: #d9d9d9;
+  --special-footer-white: rgba(255, 255, 255, 0.9);
 }
 
 /* Global */
@@ -389,14 +391,14 @@ img {
   padding-right: 510px;
   padding-top: 10px;
   position: relative;
-  top: 8px;
+  top: 10px;
 }
 
 .booking-text {
   margin-left: 400px;
   margin-right: 400px;
   position: relative;
-  top: 11px;
+  top: 13px;
 }
 
 .booking-link {
@@ -411,7 +413,7 @@ img {
   font-weight: bold;
   color: var(--basic-white);
   position: relative;
-  top: 8px;
+  top: 10px;
 }
 
 .booking-link:hover,
@@ -421,7 +423,148 @@ img {
 
 .booking-link:active {
   background-color: var(--basic-extra-brown);
-  color: rgba(255, 255, 255, 0.3);
+  color: var(--special-white);
+}
+
+.booking-block-form {
+  width: 568px;
+  height: 395px;
+  background-color: var(--basic-white);
+  box-shadow: 0px 7px 15px var(--booking-shadow);
+  position: relative;
+  left: 315px;
+}
+
+.block-for-map {
+  width: 1200px;
+  height: 473px;
+  position: relative;
+}
+
+.map {
+  width: 1199px;
+  height: 594px;
+  position: absolute;
+  right: 1px;
+  z-index: 0;
+}
+
+.booking-form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding-top: 42px;
+
+}
+
+.check-in-date-legend {
+  font-size: 14px;
+  line-height: 26px;
+  font-weight: bold;
+}
+
+.check-in-date-value {
+  font-size: 14px;
+  line-height: 26px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: var(--basic-black);
+  padding-top: 6px;
+  padding-bottom: 6px;
+  padding-left: 13px;
+  padding-right: 180px;
+  margin-left: 20px;
+  border: none;
+  background-color: var(--basic-light-grey);
+
+}
+
+.check-out-date-legend {
+  font-size: 14px;
+  line-height: 26px;
+  font-weight: bold;
+}
+
+.check-out-date-value {
+  font-size: 14px;
+  line-height: 26px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: var(--basic-black);
+  padding-top: 6px;
+  padding-bottom: 6px;
+  padding-left: 13px;
+  padding-right: 180px;
+  margin-left: 20px;
+  border: none;
+  background-color: var(--basic-light-grey);
+}
+
+.adults-number-legend {
+  font-size: 14px;
+  line-height: 26px;
+  font-weight: bold;
+  margin-left: 15px;
+  margin-right: 20px;
+}
+
+.adults-number-value {
+  font-size: 14px;
+  line-height: 26px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: var(--basic-black);
+  padding: 6px 39px;
+  border: none;
+  background-color: var(--basic-light-grey);
+  text-align: center;
+}
+
+.child-number-legend {
+  font-size: 14px;
+  line-height: 26px;
+  font-weight: bold;
+
+}
+
+.child-number-value {
+  font-size: 14px;
+  line-height: 26px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: var(--basic-black);
+  padding: 6px 39px;
+  border: none;
+  background-color: var(--basic-light-grey);
+  text-align: center;
+  margin-right: 15px;
+  margin-left: 20px;
+}
+
+.booking-form-button {
+  font-size: 21px;
+  line-height: 26px;
+  font-weight:bold;
+  width: 458px;
+  height: 58px;
+  font-family: "PT Sans", "Arial", sans-serif;
+  text-transform: uppercase;
+  text-align: center;
+  color: var(--basic-white);
+  vertical-align: middle;
+  background-color: var(--basic-blue);
+  border: none;
+  margin-top: 42px;
+}
+
+.booking-form-button:hover,
+.booking-form-button:focus {
+  background-color: var(--basic-dark-blue);
+}
+
+.booking-form-button:active {
+  background-color: var(--basic-deep-blue);
+  color: var(--special-white);
 }
 
 /* Catalog-Page */
@@ -857,28 +1000,30 @@ img {
 }
 
 .stars-1 {
-  position: relative;
-  left: 441px;
-  top: 33px;
+  position: absolute;
+  bottom: 175px;
+  left: 24px;
 }
 
 .stars-2 {
-  position: relative;
-  left: 463px;
-  top: 31px;
+  position: absolute;
+  bottom: 177px;
+  left: 46px;
 }
 
 .stars-3 {
-  position: relative;
-  left: 486px;
-  top: 29px;
+  position: absolute;
+  bottom: 177px;
+  left: 68px;
+
 }
 
 .rating {
   justify-self: end;
   position:relative;
-  bottom: 63px;
-  left: 830px;
+  top: 80px;
+  right: 70px;
+
 }
 
 .rating-name {
@@ -893,15 +1038,18 @@ img {
 /* Footer */
 
 .main-footer {
+  position: relative;
   width: 1200px;
+  height: 120px;
   margin: 0 auto;
   padding: 0;
-  /*box-shadow: 0 10px 5px -3px #34495e;*/
+  background-color: var(--special-footer-white);
 }
 
 .main-footer .container {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
+
 }
 
 .footer-contacts {
