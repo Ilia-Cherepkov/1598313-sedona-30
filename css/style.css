@@ -1084,7 +1084,8 @@ img {
   justify-self: center;
   position: relative;
   right: 40px;
-  top: 35px;
+  top: 25px;
+  margin-top: 10px;
 }
 
 .footer-social-list {
