@@ -262,7 +262,7 @@ img {
 }
 
 .special-description {
-  height: 256px;
+  min-height: 256px;
   width: 400px;
   color: var(--basic-white);
   background-color: var(--basic-blue);
@@ -306,7 +306,7 @@ img {
 .special-description-foto {
   width: 800px;
   height: 256px;
-  /*background-color: var(--basic-blue);*/
+  background-color: var(--basic-blue);
 }
 
 .special-list {
