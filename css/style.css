@@ -707,6 +707,14 @@ img {
   color: var(--special-white);
 }
 
+.modal {
+  display: none;
+}
+
+.modal-show {
+  display: block;
+}
+
 /* Catalog-Page */
 
 .filters {
@@ -1006,6 +1014,7 @@ img {
   font-size: 12px;
   line-height: 18px;
   color: var(--basic-blue);
+  text-decoration: none;
 }
 
 .sorting-link:hover,
