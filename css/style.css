@@ -505,7 +505,7 @@ img {
 
 .check-in-date-value:focus {
   background-color: var(--basic-white);
-  border: 2px solid var(--line-white);
+
 }
 
 .check-out-item {
@@ -556,7 +556,7 @@ img {
 
 .check-out-date-value:focus {
   background-color: var(--basic-white);
-  border: 2px solid var(--line-white);
+
 }
 
 .adults-number {
