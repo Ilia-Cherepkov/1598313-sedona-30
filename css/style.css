@@ -713,6 +713,7 @@ img {
 
 .modal-show {
   display: block;
+  animation: bounce 0.7s;
 }
 
 /* Catalog-Page */
@@ -1294,3 +1295,14 @@ img {
   fill: var(--basic-bright-grey);
 }
 
+/* Animations */
+
+@keyframes bounce {
+  0% {
+    transform: translateY(300px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
