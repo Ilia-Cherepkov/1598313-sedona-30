@@ -115,6 +115,7 @@ img {
   position: absolute;
   left: 530px;
   top: 0;
+  z-index: 1;
 }
 
 .main-navigation {
@@ -178,8 +179,7 @@ img {
   margin: 0 auto;
   padding: 0 0;
   box-shadow:
-  -2px 0 5px -3px #34495e,
-  2px 0 5px -3px #34495e;
+  0px 0px 15px 5px rgb(0 1 1 / 20%);
 }
 
 .container {
@@ -189,6 +189,9 @@ img {
 }
 
 .block-for-welcome {
+  width: 1200px;
+  height: 509px;
+  background-image: url(../img/background-photo.jpg);
   position: relative;
 }
 
@@ -217,11 +220,11 @@ img {
   margin-bottom: 17px;
   padding-left: 343px;
   padding-right: 360px;
-  padding-top: 15px;
+  padding-top: 20px;
 }
 
 .description-heading-text {
-  padding-top: 30px;
+  padding-top: 33px;
   padding-right: 350px;
   padding-left: 350px;
   margin-bottom: 50px;
@@ -453,7 +456,7 @@ img {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
-  padding-top: 42px;
+  padding-top: 37px;
 
 }
 
@@ -721,7 +724,7 @@ img {
 .filters {
   background-image: url(../img/background-catalog.png);
   background-color: var(--basic-deep-blue);
-  padding-bottom: 10px;
+  min-height: 217px;
 }
 
 .filter-bar {
@@ -746,7 +749,7 @@ img {
   line-height: 21px;
   color: var(--basic-white);
   padding-top: 20px;
-
+  padding-bottom: 4px;
 }
 
 .filter-option label {
@@ -755,20 +758,44 @@ img {
   bottom: 18px;
 }
 
-.checkbox1 {
-  position: relative;
-  right: 40px;
-  bottom: 10px;
+.filter-input-checkbox {
+  display: none;
 }
 
-.checkbox2 {
+.filter-input-radio {
+  display: none;
+}
+
+.filter-option-label:before {
+  content: url(../img/checkbox-off.svg);
+  display: inline-block;
   position: relative;
-  right: 40px;
-  bottom: 10px;
+  right: 5px;
+  text-align: center;
+  width: 23px;
+  height: 23px;
+  padding-right: 15px;
+  background-repeat: no-repeat;
+  border: none;
+  vertical-align: middle;
+}
+
+input:checked + .filter-option-label:before {
+  content: url(../img/checkbox-on.svg);
+}
+
+input:disabled + .filter-option-label:before {
+  content: url(../img/checkbox-off-disable.svg);
 }
 
 .filters fieldset {
   border: none;
+}
+
+.filter-list {
+  position: relative;
+  top: 10px;
+  right: 5px;
 }
 
 .filter-1 {
@@ -777,11 +804,21 @@ img {
   top: 20px;
 }
 
+.filter-1 legend {
+  position: relative;
+  top: 5px;
+}
+
 .filter-2 {
   flex-grow: 1;
   position: relative;
   left: 15px;
   top: 20px;
+}
+
+.filter-2 legend {
+  position:relative;
+  top: 5px;
 }
 
 .filter-item {
@@ -1137,6 +1174,7 @@ img {
   background-color: var(--basic-brown);
   padding-left: 16px;
   padding-right: 17px;
+  margin-left: 2px;
 }
 
 .booking-button:hover,
